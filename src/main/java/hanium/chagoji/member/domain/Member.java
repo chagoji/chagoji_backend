@@ -1,6 +1,6 @@
 package hanium.chagoji.member.domain;
 
-import hanium.chagoji.common.domain.common.BaseEntity;
+import hanium.chagoji.constraint.domain.common.BaseEntity;
 import hanium.chagoji.member.domain.Enum.UserStatus;
 import jakarta.persistence.*;
 import lombok.*;
@@ -40,12 +40,6 @@ public class Member extends BaseEntity {
 
     @Column(nullable = false, length = 50)
     private String regidenceDetail;
-
-    @Column(name = "created_at", nullable = false)
-    private DateTime createdAt;
-
-    @Column(name = "updated_at", nullable = false)
-    private DateTime updatedAt;
 
     @Column(name = "status", nullable = false, length = 15)
     private UserStatus status;

@@ -1,6 +1,6 @@
-package hanium.chagoji.common.domain;
+package hanium.chagoji.constraint.domain;
 
-import hanium.chagoji.common.domain.common.BaseEntity;
+import hanium.chagoji.constraint.domain.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
